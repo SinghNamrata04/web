@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>namrata</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.weather-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.weather-info div {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.weather-info span {
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div id ="weather-info">
+        <h2> Current weather </h2>
+        <p> Tempreature : <span id = "temperature" >...</span> c </p>
+        <p> Humidity <span id = "humidity" >...</span> %</p>
+        <p> Wind speed: <span id = "wind speed">..</span>km/h</p>
+        <div class="conditions">Conditions: <span id="conditions">Sunny</span></div>
+    </div>
+    <input type ="text" id="location-input" placeholder="Enter city or zip code">
+<button onclick="searchWeather()">Search </button>
+</body>
+</html>
